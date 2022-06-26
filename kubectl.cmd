@@ -48,3 +48,9 @@ delete with config
 kubectl delete -f nginx-deployment.yaml
 #Metrics
 kubectl top The kubectl top command returns current CPU and memory usage for a cluster’s pods or nodes, or for a particular pod or node if specified.
+
+#default pod labeling ISTO
+kubectl label namespace default istio-injection=enabled
+kubectl get po -n istio-system
+
+kubectl apply -f ./..
